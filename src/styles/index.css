@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@312&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::before, *::after {
+
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    
+}
+
+
+:root {
+
+    --main-color-:#337F38;
+    --secondary-color-:#091242;
+    --ternary-color-:#FFD97D;
+
+}
+
+.infos {
+
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: var(--main-color-); */
+
+
+}
+
+
+.logoV1 {
+
+    height: 100px;
+    width: 100px;
+    object-fit: cover;    
+
+}
+
+.logo-text {
+
+    display: block;
+    text-transform: uppercase;
+    color: var(--main-color-);
+
+}
+
+.logo-name {
+
+    display: flex;
+    gap: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-bx {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+.time {
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+}
+
+.time-work span {
+
+    display: block;
+    font-size: 0.7rem;
+    font-weight: bolder;
+    color: var(--main-color-);
+
+}
+
+.time-icon {
+
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color-);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-filtre {
+
+    position: relative;
+  
+
+}
+
+.header-title {
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 450px;
+    margin-top: 140px;
+
+}
+
+.header-description {
+
+    text-align: center;
+    font-size: 1.3rem;
+    width: 770px;
+
+}
+
+.header-background {
+
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.filtre {
+
+    height: 600px;
+    width:100%;
+    background-color:black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0; 
+    color: #FFFFFF;   
+    
+}
+
+.filter-content {
+
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0; 
+    color: #FFFFFF;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+.filter-content div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.logo-v4 {
+
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    bottom: -30px;
+
+}
+
+header {
+
+    position: relative;
+
+}
+
+
+
+.nav-content {
+
+    height: 70px;
+    width: 100%;
+    background-color: #337f3831;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    color: #FFFFFF;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    /* background-color: red; */
+
+}
+
+nav {
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    font-size:0.8rem ;
+    align-items: center;   
+
+}
+
+nav li {
+
+    padding-right: 20px; 
+    text-transform: capitalize;  
+    border-right: 1px solid #ffffff48;
+
+}
+
+.icon-media {
+
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+
+}
+
+.social-media {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.logoicon {
+
+    height: 30px;
+    width: 30px;
+
+}
+
+.clock {
+
+    height: 17px;
+    width: 17px;
+
+
+}
+
+.we-do {
+
+   
+
+}
+
+.we-do span {
+
+    display: block;
+    text-transform: capitalize;
+
+}
+
+.we-do-txt, .us {
+
+    border-left: 3px solid var(--main-color-);
+    height: 21px;
+    width: 85px;
+    padding-left: 7px;
+    background-color: #F3F3F3;
+    padding-top: 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+
+}
+
+
+.cargo-solution {
+
+    font-size: 1.8rem !important;
+    font-weight: bold;
+    width: 230px;
+    padding-top: 10px;
+
+}
+
+.wht-we {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    gap: 20px;
+
+}
+
+.we-do-bx, .services{
+
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 90px;
+    border-right: 3px solid #F3F3F3;
+    padding-right: 23px;
+
+}
+
+.services-title {
+
+    font-size: 1.2rem;
+
+
+}
+
+.services-txt {
+
+    font-size: 0.9rem;
+    color: grey;
+    margin-top: 17px;
+    width: 230px;
+
+}
+
+.services-bx span {
+
+    display: block;
+
+}
+
+
+#warehousing {
+
+    width: 200px;
+    border: none;
+
+}
+
+.icon-services {
+
+    height: 30px;
+    width: 30px;
+
+}
+
+#air-icon {
+
+    height: 40px;
+    width: 40px;
+
+}
+
+.logistics {
+
+    padding-top: 70px;
+    position: relative;
+
+}
+
+.backgrdLogistics {
+
+    width: 100%;
+
+}
+
+.solution {
+
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: -400px;
+    display: flex;
+    justify-content: center;
+    
+    /* align-items: center; */
+   
+}
+
+.solution-logistics {
+
+    background-color: #FFFFFF;
+    width: 900px;
+    height: 400px;
+    padding: 50px;
+
+}
+
+.solution-content {
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 35px;
+
+}
+
+.us {
+
+  padding-right: 5px; 
+  padding-bottom: 5px; 
+
+}
+
+.solution-content-box {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.solution-content-box p {
+
+    color: grey;
+   font-size: 0.9rem;
+    width: 400px;
+
+}
+
+.cargo-logistics {
+
+    width: 400px;
+
+}
+
+.newZeland {
+
+    width: 100%;
+
+}
+
+.time-travel {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.timer {
+
+    font-size: 0.9rem !important;
+
+}
+
+.girlCardboat-box {
+
+    background-color: #FFFFFF;
+    padding: 20px;
+    position: absolute;
+    bottom:40px;
+    right: 490px;
+
+
+}
+
+.services-do {
+
+    margin-top: 450px;
+    position: relative;
+   
+
+}
+
+.services-do h1 {
+
+    text-transform: capitalize;
+    color: var(--main-color-);
+    text-align: center;
+   
+
+}
+
+.gradient {
+
+    background: linear-gradient(to right, #337F38, #5aac67, #6eb573);
+    height: 250px;
+    width: 100%;
+    margin-top: 300px;
+
+}
+
+.card-img-services {
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+
+
+}
+
+.img-services {
+
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.card-filtre-missions {
+
+    height: 400px;
+    width:100%;
+    background-color:black;
+    opacity: 0.7;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0; 
+    color: #FFFFFF;
+   
+
+}
+
+.card-img-item {
+
+    position: relative;
+
+}
+
+.card-img-description {
+
+    position: absolute;
+    bottom:20px;
+    z-index: 2;
+
+}
+
+.card-img-description span {
+
+    display: block;
+    width: 300px;
+
+}
+
+.card-title {
+
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-align: center;
+    /* margin-bottom: 10px; */
+
+}
+
+.card-title-description {
+
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+
+
+
+
+
